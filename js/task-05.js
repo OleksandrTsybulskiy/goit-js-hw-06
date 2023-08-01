@@ -4,9 +4,9 @@ const nameOutput = document.querySelector('#name-output');
 nameInput.addEventListener('input', customInput);
 
 function customInput(e) {
-    nameOutput.textContent = e.currentTarget.value;
+    nameOutput.textContent = e.currentTarget.value.trim();
     
-    if (e.currentTatger.value === '') {
+    if (e.currentTarget.value.trim() === '') {
         nameOutput.textContent = 'Anonymous';
     }
 };

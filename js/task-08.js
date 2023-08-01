@@ -17,8 +17,8 @@ function submitHandler(event) {
   else {
     profile.email = email.value;
     profile.password = password.value;
-
+    event.currentTarget.reset();
     console.log(profile);
   }
-  event.currentTarget.reset();
+  
 }
